@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important;
+  font-family: "Poppins", "arial";
+}
+.flex {
+  display: flex;
+}
+.flex.v-ct {
+  align-items: center;
+}
+.flex.h-sb {
+  justify-content: space-between;
+}
+header {
+  background-color: #0c9696;
+  padding: 0 1rem;
+  height: 68px;
+  color: #fff;
+}
+header h1 {
+  font-size: 0.95rem;
+}
+.listContainer {
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+  height: calc(100vh - 68px);
+}
+.listItemUl {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+.listItem {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px -5px #ddd;
+}
+.listItem.done {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+  box-shadow: none;
+}
+.listItem .summary {
+  margin-left: 1rem;
+}
+.listItem b {
+  font-size: 0.9rem;
+}
+.listItem p {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.svgActions {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: 2.5;
+  text-align: center;
+  background: #ddd;
+  margin-left: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  padding: 10px 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-color: transparent;
+  text-transform: uppercase;
+}
+button.outlined {
+  color: #fff;
+  border: 1px #fff solid;
+}
+button.primary {
+  background-color: #0c9696;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+}
+button.secondary {
+  background-color: #f8f9f0;
+  border-radius: 4px;
+}
+
+.modalForm {
+  padding: 2rem;
+}
+.textInputContainer {
+  margin-top: 1.2rem;
+  min-width: 300px;
+}
+.textInputContainer label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  opacity: .8;
+}
+.textInputContainer input,
+.textInputContainer textarea {
+  width: 100%;
+  border: 2px #ddd solid;
+  line-height: 1.6;
+  padding: 10px 1rem;
+}
+.textInputContainer input:read-only,
+.textInputContainer textarea:read-only {
+  border: none;
+  padding-left: 0;
+  font-weight: 600;
+}
+.textInputContainer textarea {
+  height: 90px;
+  resize: none;
+}
